@@ -1,0 +1,42 @@
+/*  Model: system.ty */
+
+/* Ordinary BIF */
+def print(string){
+    PRINTSRC string;
+}
+
+def int(nums){
+    INTVAR nums num;
+    return num;
+}
+def str(num){
+    STRVAR num num1;
+    return num1;
+}
+def float(type){
+    FLOATVAR  type num1;
+    return num1;
+}
+def input(info){
+    SYSTEM_INPUT info retstring;
+    return retstring;
+}
+
+/* BIF of lists */
+def get(list_name, index){
+    GET_ELEMENT list_name index put;
+    return put;
+}
+def append(list_name1, item){
+    APPEND_ELEMENT list_name1 item;
+}
+
+/* BIF of file */
+def read(filepath){
+    READ filepath text;
+    return text;
+}
+def write(filepath, text){
+    WRITE filepath text;
+    return 0;
+}
