@@ -1,5 +1,7 @@
 /*  Model: system.ty */
 
+var version = "Tranquillity-Alpha 1.6";
+
 /* Ordinary BIF */
 def print(string){
     PRINTSRC string;
