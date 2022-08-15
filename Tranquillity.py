@@ -28,16 +28,7 @@ except:
     print("FileError(文件异常)")
 else:
     """ 文件位置 """
-    FILEPATH = list(filename)
-    if "\\" in FILEPATH:
-        while FILEPATH[-1] != "\\":
-            FILEPATH.pop()
-        FILEPATH2 = ""
-        for i in FILEPATH:
-            FILEPATH2 += i
-        FILEPATH = FILEPATH2
-    else:
-        FILEPATH = ""
+    FILEPATH = filename.replace("\\\\", "/").replace("\\", "/")
 
     """ 初步解析 """
     textread = f.read()
@@ -1091,33 +1082,6 @@ else:
                     # print("System: Add Value, now:", varsave)
                 else:
                     return None
-            # elif check("global", commands) == True:
-            #     line = ""
-            #     commandlists = commands.copy()
-            #     while commandlists != [] and commandlists[0] != ";" and commandlists[0] != "{":
-            #         line += commandlists[0]
-            #         commandlists.pop(0)
-            #     """ 删除关键字 """
-            #     while commands[0] != " ":
-            #         commands.pop(0)
-            #     commands.pop(0)
-            #     """ 命令部分 """
-            #     globalname = ""  # 需要全局化的变量
-            #     while commands[0] != ";":
-            #         globalname += commands[0]
-            #         commands.pop(0)
-            #     commands.pop(0)
-            #     """ 运行 """
-            #     if get_var(globalname, range, "check") != 0:
-            #         indexnum = get_var(globalname, range, "index")
-            #         if varsave[indexnum][1][1] != "par":
-            #             varsave[indexnum][1][0] = "global"
-            #         else:
-            #             print("ParameterCannotBeGlobal(参数无法全局化)")
-            #             return None
-            #     else:
-            #         print("NoDiffernrtError(未定义而未找到异常)")
-            #         return None
             elif check("while", commands) == True:
                 line = ""
                 commandlists = commands.copy()
@@ -1397,7 +1361,7 @@ else:
                                     num -= 1
                             commands.pop(0)
                         commands.pop(0)
-            elif check("def", commands) == True:
+            elif check("function", commands) == True:
                 line = ""
                 commandlists = commands.copy()
                 while commandlists != [] and commandlists[0] != ";" and commandlists[0] != "{":
@@ -1481,18 +1445,7 @@ else:
                     commands.pop(0)
                 commands.pop(0)  # 删除 } 符号
                 keywordscopy = keywords.copy()
-                # keynames = list(keywords.keys())
-                # while keynames != []:
-                #     if keynames[0] != "":
-                #         if range == "global":
-                #             globalvarsave[keynames[0]] = [range, "par", keywords[keynames[0]]]
-                #         else:
-                #             have = get_var(keynames[0], localvarsave, "index")
-                #             if have == "global":
-                #                 globalvarsave[keynames[0]] = [range, "par", keywords[keynames[0]]]
-                #             else:
-                #                 localvarsave[have][keynames[0]] = [range, "par", keywords[keynames[0]]]
-                #     keynames.pop(0)
+                
                 if range == "global":
                     globalfuncsave[name] = [range, keywordscopy, code]
                 else:
