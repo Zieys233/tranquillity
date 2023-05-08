@@ -1,14 +1,7 @@
 """
-Belong to WorldplyStudio
 Author : Robot_Steve
-==========================
-You can study the principle of Tranquility;
-You can also create your own programming language.
-However, I forbid you to use its source code for personal gain!
-==========================
-你可以学习Tranquillity的工作原理；
-您还可以创建自己的编程语言。
-但是，我禁止你使用它的源代码谋求私利！
+
+A toy progamming language. Please donot talk it so seriously
 """
 
 import sys
