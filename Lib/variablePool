@@ -1,0 +1,161 @@
+{
+    "<runtime>": {
+        "type": null,
+        "internal": null,
+        "variablePool": {
+            "input": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "str",
+                    "__parameterList": [],
+                    "__code": ""
+                }
+            },
+            "print": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "int",
+                    "__parameterList": ["content"],
+                    "content": {
+                        "type": "str",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "str_to_int": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "int",
+                    "__parameterList": ["num"],
+                    "num": {
+                        "type": "str",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "float_to_int": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "int",
+                    "__parameterList": ["num"],
+                    "num": {
+                        "type": "float",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "str_to_float": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "float",
+                    "__parameterList": ["num"],
+                    "num": {
+                        "type": "str",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "int_to_float": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "float",
+                    "__parameterList": ["num"],
+                    "num": {
+                        "type": "int",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "to_str": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "str",
+                    "__parameterList": ["num"],
+                    "num": {
+                        "type": "float",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "strlen": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "int",
+                    "__parameterList": ["content"],
+                    "content": {
+                        "type": "str",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "chr": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "str",
+                    "__parameterList": ["num"],
+                    "num": {
+                        "type": "int",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            },
+            "ord": {
+                "type": "function",
+                "internal": null,
+                "variablePool": {
+                    "__returnValueType": "int",
+                    "__parameterList": ["char"],
+                    "char": {
+                        "type": "str",
+                        "internal": null,
+                        "variablePool": {
+                            "__value": null
+                        }
+                    },
+                    "__code": ""
+                }
+            }
+        }
+    }
+}
